@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Waish & Yasmin | Wedding Invitation</title>
+<meta name="theme-color" content="#100a05">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080503;color:#f9e6b4;font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.22;background-image:radial-gradient(#f6d78e .6px,transparent .6px);background-size:8px 8px}
+.page{min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;padding:65px 18px;overflow:hidden;background:radial-gradient(circle at 50% 15%,#3a210c 0, #150b04 35%,#070302 75%)}
+.page:nth-child(even){background:radial-gradient(circle at 50% 50%,#291608 0,#100703 55%,#060302 100%)}
+.inner{width:min(980px,100%);text-align:center;position:relative;z-index:3}
+.gold{color:#f3cc79}.script{font-family:"Great Vibes",cursive}.serif{font-family:"Cormorant Garamond",serif}
+.monogram{width:122px;height:122px;margin:0 auto 22px;border:1px solid #d8ae58;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 35px #b57a2138,inset 0 0 25px #d9ad5420;color:#f6d68b;font-family:"Cormorant Garamond";font-size:47px}
+.kicker{text-transform:uppercase;letter-spacing:4px;font-size:10px;color:#d4b06a;margin:16px 0}
+h1{font-family:"Cormorant Garamond";font-size:clamp(58px,12vw,120px);line-height:.78;margin:8px 0;color:#f9dda0;text-shadow:0 0 25px #d39b3a38}
+.names{font-family:"Great Vibes";font-size:clamp(50px,10vw,94px);margin:22px 0;color:#fff0c6}
+.subtitle{font-family:"Cormorant Garamond";font-size:23px;color:#e5d4b2;line-height:1.5}
+.quote{max-width:760px;margin:20px auto;font-family:"Cormorant Garamond";font-size:clamp(25px,5vw,42px);line-height:1.35;color:#f2dca9}
+.para{max-width:700px;margin:18px auto;color:#cfc0a7;line-height:1.8;font-size:14px}
+.divider{display:flex;justify-content:center;align-items:center;gap:13px;color:#d3a552;margin:18px 0}.divider:before,.divider:after{content:"";height:1px;width:90px;background:linear-gradient(90deg,transparent,#c99b4b)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#ffe7a8;border:1px solid #c79a48;background:#c693260d;border-radius:30px;padding:14px 23px;margin:8px 4px;cursor:pointer;transition:.25s}.btn:hover{transform:translateY(-2px);background:#c6932622}
+.photo-frame{width:min(430px,92vw);margin:25px auto;border:1px solid #d0a04d;padding:8px;background:linear-gradient(135deg,#211207,#090503);box-shadow:0 0 35px #b57a2128}
+.photo-frame img{display:block;width:100%;height:auto;max-height:540px;object-fit:cover}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.photo-grid .photo-frame{width:100%;margin:0}.photo-grid img{aspect-ratio:4/5;object-fit:cover}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.event{padding:27px 15px;border:1px solid #c79a483f;border-radius:18px;background:#fff9df08;box-shadow:inset 0 0 25px #d39b3a0a}.event h3{font-family:"Cormorant Garamond";font-size:29px;margin:0 0 10px;color:#f3d18a}.event p{margin:5px;color:#d6c7ad;font-size:13px}.event .time{font-family:"Cormorant Garamond";font-size:24px;color:#fff0c3;margin-top:12px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:left;margin-top:30px}.box{border:1px solid #c79a4838;border-radius:18px;padding:25px;background:#fff9df06}.box h3{font-family:"Cormorant Garamond";font-size:26px;color:#f1cd82;margin:0 0 12px}.box p{color:#cfc0a7;line-height:1.7;font-size:14px;margin:4px 0}
+.music{position:fixed;right:16px;bottom:16px;z-index:120;width:52px;height:52px;border-radius:50%;border:1px solid #e0b35c;background:#170b04;color:#ffe19b;font-size:20px;box-shadow:0 0 22px #c58b2b44;cursor:pointer}
+#soundTip{position:fixed;right:76px;bottom:21px;z-index:119;background:#160b04;border:1px solid #c89a4c;padding:10px 14px;border-radius:18px;font-size:11px;color:#e9d6ae;opacity:0;transform:translateY(6px);transition:.3s;pointer-events:none}
+#soundTip.show{opacity:1;transform:none}
+.petals{position:fixed;inset:0;pointer-events:none;z-index:110;overflow:hidden}.petal{position:absolute;top:-30px;width:9px;height:14px;border-radius:80% 20% 80% 20%;background:#f1d5a0;box-shadow:0 0 7px #e6b85c;animation:fall linear forwards}
+@keyframes fall{to{transform:translate3d(var(--dx),110vh,0) rotate(600deg);opacity:0}}
+.star{position:absolute;width:4px;height:4px;background:#f7d88f;border-radius:50%;box-shadow:0 0 12px #f0bd54;animation:twinkle 2.4s infinite alternate}@keyframes twinkle{to{opacity:.2;transform:scale(.5)}}
+.flower{font-size:31px;letter-spacing:9px;color:#d7ac58;margin-bottom:10px}
+.footer{min-height:auto;padding:70px 18px}
+@media(max-width:700px){.events,.info,.photo-grid{grid-template-columns:1fr}.events{gap:12px}.event{padding:23px 12px}.photo-grid .photo-frame{max-width:430px}}
+</style>
+</head>
+<body>
+<div class="petals" id="petals"></div>
+<div id="soundTip">Tap ♫ to play / pause music</div>
+<button class="music" id="music" aria-label="Play wedding music">♫</button>
+<audio id="song" loop preload="auto"><source src="wedding-song.mp3" type="audio/mpeg"></audio>
+
+<section class="page">
+<div class="inner">
+<div class="monogram">W&nbsp;Y</div>
+<div class="kicker">Bismillahir Rahmanir Raheem</div>
+<h1>Wedding<br>Invitation</h1>
+<div class="divider">✦</div>
+<div class="names">Waish <span class="gold">&</span> Yasmin</div>
+<div class="subtitle">With the blessings of Allah and our beloved families</div>
+<p class="para">We joyfully invite you to be a part of our special celebrations and to bless us as we begin a beautiful new chapter together.</p>
+<a class="btn" href="#story">Enter Invitation ↓</a>
+</div></section>
+
+<section class="page" id="story">
+<div class="inner">
+<div class="flower">❧ ✦ ❧</div>
+<div class="kicker">A Beautiful Beginning</div>
+<div class="quote">“Do dil, ek paak rishta, aur har qadam par Allah ki rehmat.”</div>
+<p class="para">Nikah sirf do logon ka milan nahi, balki mohabbat, bharose, izzat aur duaaon se shuru hone wala ek khoobsurat safar hai.</p>
+<div class="photo-grid">
+<div class="photo-frame"><img src="couple-1.jpg" alt="Waish and Yasmin wedding illustration"></div>
+<div class="photo-frame"><img src="couple-2.jpg" alt="Waish and Yasmin wedding illustration"></div>
+</div>
+</div></section>
+
+<section class="page">
+<div class="inner">
+<div class="kicker">The Celebrations</div>
+<h2 class="serif" style="font-size:58px;margin:0;color:#f3d18a">Save the Dates</h2>
+<p class="para">Three beautiful moments, one unforgettable beginning.</p>
+<div class="events">
+<div class="event"><h3>Haldi Ceremony</h3><p>27 October 2026</p><div class="time">07:00 PM</div></div>
+<div class="event"><h3>Mehendi Ceremony</h3><p>28 October 2026</p><div class="time">07:30 PM</div></div>
+<div class="event"><h3>Nikkah</h3><p>29 October 2026</p><div class="time">10:30 PM</div></div>
+</div>
+<div class="divider" style="margin-top:45px">✦</div>
+<div class="script" style="font-size:44px;color:#f1d18c">Ahlan wa Sahlan</div>
+</div></section>
+
+<section class="page">
+<div class="inner">
+<div class="kicker">The Couple & Families</div>
+<div class="info">
+<div class="box"><h3>Waish Khan</h3><p><b>S/O:</b> Afroj Khan</p><p>Mangalpur Budhwaliya,<br>District Bettiah</p></div>
+<div class="box"><h3>Yasmin Khatoon</h3><p><b>D/O:</b> Mohammad Amjad Ali</p><p>Dariyapur, East Champaran,<br>Bihar — 845417</p></div>
+</div>
+<div class="quote" style="font-size:30px;margin-top:45px">“May Allah place barakah in their journey and fill their home with peace and happiness.”</div>
+</div></section>
+
+<section class="page footer">
+<div class="inner">
+<div class="monogram" style="width:88px;height:88px;font-size:32px">W&nbsp;Y</div>
+<div class="kicker">Wedding Venue</div>
+<div class="quote" style="font-size:34px">Your presence and duas will make our celebration complete.</div>
+<a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/9HpHd68qKDwmugA18?g_st=ac">📍 Open Wedding Location</a>
+<div class="divider" style="margin-top:40px">✦</div>
+<div class="script" style="font-size:54px;color:#f2d18b">JazakAllahu Khairan</div>
+<p class="para">With love, prayers and warmest wishes — Waish & Yasmin</p>
+</div></section>
+
+<script>
+const petals=document.getElementById('petals');
+function petal(){
+ const p=document.createElement('i');p.className='petal';
+ p.style.left=Math.random()*100+'vw';
+ p.style.setProperty('--dx',(Math.random()*240-120)+'px');
+ p.style.animationDuration=(5+Math.random()*7)+'s';
+ p.style.transform='rotate('+Math.random()*360+'deg)';
+ p.style.opacity=.35+Math.random()*.55;
+ petals.appendChild(p);setTimeout(()=>p.remove(),13000);
+}
+for(let i=0;i<32;i++)setTimeout(petal,i*80);
+setInterval(petal,420);
+for(let i=0;i<35;i++){const s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=Math.random()*2.5+'s';document.body.appendChild(s)}
+
+const song=document.getElementById('song'), music=document.getElementById('music'), tip=document.getElementById('soundTip');
+let playing=false;
+async function startMusic(){
+ try{await song.play();playing=true;music.textContent='Ⅱ';tip.classList.remove('show')}catch(e){tip.classList.add('show');setTimeout(()=>tip.classList.remove('show'),3000)}
+}
+music.addEventListener('click',async()=>{
+ if(playing){song.pause();playing=false;music.textContent='♫'}
+ else await startMusic();
+});
+document.querySelector('a[href="#story"]').addEventListener('click',()=>{setTimeout(startMusic,150)});
+</script>
+</body>
+</html>
